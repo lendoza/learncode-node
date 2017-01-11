@@ -1,6 +1,6 @@
 # learncode-node
 ======
-**learncode-node** is the collection of assignments I completed for the 'Newbie to Ninja - NodeJS' course taughty by LearnCode.Academy.
+**learncode-node** is the collection of assignments I completed for the 'Newbie to Ninja - NodeJS' course taught by LearnCode.Academy.
 
 ## Files
 * 1 - 5: NodeJS Basics
