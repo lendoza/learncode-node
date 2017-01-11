@@ -1,0 +1,7 @@
+<!-- Tweets Partial-->
+
+<ul>
+  {{#tweets}}
+    <li>{{.}}</li>
+  {{/tweets}}
+</ul>
