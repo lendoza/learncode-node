@@ -10,6 +10,7 @@
 * 12: Express Generator
 * 13: MySQL Basics
 * 14: Dynamic Views with HoganJS
+* 15: Authentication with Passport, Bcrypt & Sessions
 
 ## Technology
 * HTML
