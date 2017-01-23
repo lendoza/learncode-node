@@ -29,20 +29,25 @@ express()
     //     })
 
     // })
+
+    // Get all users
     .get('/users', (req, res, next) => {
         db('users').then((users) => {
             res.send(users)
         // Express catch error function
         }, next)
     })
+    // Add user 
     .post('/users', (req, res, next) => {
-        // Can add validations
+        // Can add validations (rules for insertions)
         db('users')
             .insert(req.body)
             .then((userIds) => {
                 res.send(userIds)
             }, next)
     })
+
+    // Get a single user
     .get('/users/:id', (req, res, next) => {
         const { id } = req.params;
         db('users')
@@ -53,6 +58,7 @@ express()
                 res.send(users)
             }, next)
     })
+    // Update user
     .put('/users/:id', (req, res, next) => {
         const { id } = req.params;
         db('users')
@@ -65,6 +71,8 @@ express()
                 res.sendStatus(200);
             }, next)
     })
+
+    // Delete user
     .delete('/users/:id', (req, res, next) => {
         const { id } = req.params;
         db('users')
