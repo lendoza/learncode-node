@@ -1,0 +1,5 @@
+1. cd desktop/Programming
+
+2. ./mongodb/bin/mongod -> This runs the server
+
+3. 
